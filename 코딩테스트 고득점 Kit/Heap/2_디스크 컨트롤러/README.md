@@ -19,7 +19,9 @@
 
 와 같은 요청이 들어왔습니다. 이를 그림으로 표현하면 다음과 같습니다.
 
-https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/02c70993-ca43-4130-ac63-0dec59e091c6/image.001.jpeg
+![image](https://github.com/user-attachments/assets/eed1ebc2-12de-494a-8219-45a47293e924)
+
+이미지 출처: https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/02c70993-ca43-4130-ac63-0dec59e091c6/image.001.jpeg
 
 이 요청을 우선순위 디스크 컨트롤러가 처리하는 과정은 다음 표와 같습니다.
 
@@ -38,7 +40,9 @@ https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/02c70
 
 모든 요청 작업을 마쳤을 때 각 작업에 대한 반환 시간(turnaround time)은 작업 요청부터 종료까지 걸린 시간으로 정의합니다. 위의 우선순위 디스크 컨트롤러가 처리한 각 작업의 반환 시간은 다음 그림, 표와 같습니다.
 
-https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/fdfb33a3-1ad4-443a-a5d0-09b3dc548ece/image.002.jpeg
+![image](https://github.com/user-attachments/assets/17984a5b-e0d8-40eb-8579-a58f4023dd83)
+
+이미지 출처: https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/fdfb33a3-1ad4-443a-a5d0-09b3dc548ece/image.002.jpeg
 
 | 작업 번호 | 요청 시각 | 작업 종료 시각 | 반환 시간 |
 | :--: | :--: | :--: | :--: |
