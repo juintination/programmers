@@ -26,15 +26,22 @@ n개의 송전탑이 전선을 통해 하나의 [트리](https://en.wikipedia.or
 
 - 입출력 예 #1
 	- 다음 그림은 주어진 입력을 해결하는 방법 중 하나를 나타낸 것입니다.
-	- https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/5b8a0dcd-cba0-47ca-b5e3-d3bafc81f9d6/ex1.png
+ 	![image](https://github.com/user-attachments/assets/4c7533e9-6a6f-4a40-a711-c8ff81a9bb2a)
+
+	이미지 출처: https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/5b8a0dcd-cba0-47ca-b5e3-d3bafc81f9d6/ex1.png
 	- 4번과 7번을 연결하는 전선을 끊으면 두 전력망은 각 6개와 3개의 송전탑을 가지며, 이보다 더 비슷한 개수로 전력망을 나눌 수 없습니다.
 	- 또 다른 방법으로는 3번과 4번을 연결하는 전선을 끊어도 최선의 정답을 도출할 수 있습니다.
+
 - 입출력 예 #2
 	- 다음 그림은 주어진 입력을 해결하는 방법을 나타낸 것입니다.
-	- https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/b28865e1-a18e-429d-ae7a-14e77e801539/ex2.png
+	![image](https://github.com/user-attachments/assets/af8f3940-0883-4616-a356-ab7746f986bb)
+
+	이미지 출처: https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/b28865e1-a18e-429d-ae7a-14e77e801539/ex2.png
 	- 2번과 3번을 연결하는 전선을 끊으면 두 전력망이 모두 2개의 송전탑을 가지게 되며, 이 방법이 최선입니다.
 - 입출력 예 #3
 	- 다음 그림은 주어진 입력을 해결하는 방법을 나타낸 것입니다.
-	- https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/0a7f21af-1e07-4015-8ad3-c06155c613b3/ex3.png
+	![image](https://github.com/user-attachments/assets/afc61c5b-f7b9-4b7b-a216-9af71419d6c2)
+
+	이미지 출처: https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/0a7f21af-1e07-4015-8ad3-c06155c613b3/ex3.png
 	- 3번과 7번을 연결하는 전선을 끊으면 두 전력망이 각각 4개와 3개의 송전탑을 가지게 되며, 이 방법이 최선입니다.
 
