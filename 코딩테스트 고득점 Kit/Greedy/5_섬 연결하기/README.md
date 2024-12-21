@@ -25,4 +25,6 @@ n개의 섬 사이에 다리를 건설하는 비용(costs)이 주어질 때, 최
 
 costs를 그림으로 표현하면 다음과 같으며, 이때 초록색 경로로 연결하는 것이 가장 적은 비용으로 모두를 통행할 수 있도록 만드는 방법입니다.
 
-https://grepp-programmers.s3.amazonaws.com/files/production/13e2952057/f2746a8c-527c-4451-9a73-42129911fe17.png
+![image](https://github.com/user-attachments/assets/49356a54-4af7-4dec-b587-45364ff8b285)
+
+이미지 출처: https://grepp-programmers.s3.amazonaws.com/files/production/13e2952057/f2746a8c-527c-4451-9a73-42129911fe17.png
