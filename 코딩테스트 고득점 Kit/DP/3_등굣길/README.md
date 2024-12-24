@@ -6,7 +6,9 @@
 
 아래 그림은 m = 4, n = 3 인 경우입니다.
 
-https://grepp-programmers.s3.amazonaws.com/files/ybm/056f54e618/f167a3bc-e140-4fa8-a8f8-326a99e0f567.png
+![image](https://github.com/user-attachments/assets/0b029523-0764-48f1-a47b-d40aa6284888)
+
+이미지 출처: https://grepp-programmers.s3.amazonaws.com/files/ybm/056f54e618/f167a3bc-e140-4fa8-a8f8-326a99e0f567.png
 
 가장 왼쪽 위, 즉 집이 있는 곳의 좌표는 (1, 1)로 나타내고 가장 오른쪽 아래, 즉 학교가 있는 곳의 좌표는 (m, n)으로 나타냅니다.
 
@@ -27,4 +29,6 @@ https://grepp-programmers.s3.amazonaws.com/files/ybm/056f54e618/f167a3bc-e140-4f
 
 ### 입출력 예 설명
 
-https://grepp-programmers.s3.amazonaws.com/files/ybm/32c67958d5/729216f3-f305-4ad1-b3b0-04c2ba0b379a.png
+![image](https://github.com/user-attachments/assets/09fbeee1-9270-4150-aed4-66471757fdf9)
+
+이미지 출처: https://grepp-programmers.s3.amazonaws.com/files/ybm/32c67958d5/729216f3-f305-4ad1-b3b0-04c2ba0b379a.png
