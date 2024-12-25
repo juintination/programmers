@@ -7,13 +7,11 @@ class Solution {
         for (int i = 1; i <= 8; i++) {
             setArr[i] = new HashSet<>();
             Set<Integer> set = setArr[i];
+            StringBuilder sb = new StringBuilder();
             for (int j = 0; j < i; j++) {
-                StringBuilder sb = new StringBuilder();
-                for (int k = 0; k < i; k++) {
-                    sb.append(N);
-                }
-                set.add(Integer.parseInt(sb.toString()));
+                sb.append(N);
             }
+            set.add(Integer.parseInt(sb.toString()));
         }
         for (int i = 2; i <= 8; i++) {
             Set<Integer> set = setArr[i];
