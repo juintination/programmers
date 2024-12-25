@@ -1,6 +1,6 @@
 class Solution {
 
-    Integer[][] dp;
+    public Integer[][] dp;
 
     public int dynamicTriangle(int[][] triangle, int dpth, int idx) {
         if (dp[dpth][idx] == null) {
