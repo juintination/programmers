@@ -103,40 +103,39 @@ class Solution {
         int answer = 0;
         boolean[] visited = new boolean[tableSize];
         for (List<Point> gameBoardList : gameBoardLists) {
-            gameBoardList = normalize(gameBoardList);
-            int maxSize = 0, maxIndex = -1;
             for (int i = 0; i < tableSize; i++) {
+                int matchedSize = 0, matchedIdx = -1;
                 List<Point> tableList = tableLists.get(i);
                 if (visited[i]) continue;
                 if (gameBoardList.size() == tableList.size()) {
-                    for (int k = 0; k < 4; k++) {
-                        boolean isValid = true;
-                        List<Point> rotatedTableList = rotations[i][k];
+                    for (int j = 0; j < 4; j++) {
+                        boolean isMatch = true;
+                        List<Point> rotatedTableList = rotations[i][j];
                         for (Point p : rotatedTableList) {
-                            boolean flag = false;
+                            boolean isValid = false;
                             for (Point q : gameBoardList) {
                                 if (p.getR() == q.getR() && p.getC() == q.getC()) {
-                                    flag = true;
+                                    isValid = true;
                                     break;
                                 }
                             }
-                            if (!flag) {
-                                isValid = false;
+                            if (!isValid) {
+                                isMatch = false;
                                 break;
                             }
                         }
-                        if (isValid) {
-                            if (maxSize < tableList.size()) {
-                                maxSize = tableList.size();
-                                maxIndex = i;
-                            }
+                        if (isMatch) {
+                            matchedSize = tableList.size();
+                            matchedIdx = i;
+                            break;
                         }
                     }
                 }
-            }
-            if (maxIndex != -1) {
-                answer += maxSize;
-                visited[maxIndex] = true;
+                if (matchedIdx != -1) {
+                    answer += matchedSize;
+                    visited[matchedIdx] = true;
+                    break;
+                }
             }
         }
         return answer;
