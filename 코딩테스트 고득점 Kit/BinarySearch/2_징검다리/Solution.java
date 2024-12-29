@@ -17,8 +17,8 @@ class Solution {
                 }
             }
             if (cnt <= n) {
-                answer = Math.max(answer, mid);
                 min = mid + 1;
+                answer = mid;
             } else {
                 max = mid - 1;
             }
