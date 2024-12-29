@@ -35,29 +35,29 @@ class Point {
 
 class Solution {
 
-    public int bfs(int n, Point[] points) {
+    public int bfs(int n, Point startPoint) {
         Queue<Point> queue = new LinkedList<>();
-        queue.add(points[1]);
+        queue.add(startPoint);
         boolean[] visited = new boolean[n + 1];
         visited[1] = true;
+        Stack<Integer> stack = new Stack<>();
         while (!queue.isEmpty()) {
             Point p = queue.poll();
             for (Point e : p.getList()) {
                 if (!visited[e.getX()]) {
                     visited[e.getX()] = true;
-                    points[e.getX()].setCnt(p.getCnt() + 1);
-                    queue.add(points[e.getX()]);
+                    e.setCnt(p.getCnt() + 1);
+                    queue.offer(e);
+                    stack.push(e.getCnt());
                 }
             }
         }
-        int maxCnt = 0, answer = 0;
-        for (int i = 1; i <= n; i++) {
-            int cnt = points[i].getCnt();
-            if (cnt > maxCnt) {
-                maxCnt = cnt;
-                answer = 1;
-            } else if (cnt == maxCnt) {
+        int maxCnt = stack.peek(), answer = 0;
+        while (!stack.isEmpty()) {
+            if (stack.pop() == maxCnt) {
                 answer++;
+            } else {
+                break;
             }
         }
         return answer;
@@ -73,7 +73,7 @@ class Solution {
             points[a].add(points[b]);
             points[b].add(points[a]);
         }
-        return bfs(n, points);
+        return bfs(n, points[1]);
     }
 
 }
